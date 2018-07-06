@@ -52,9 +52,20 @@
     }
     [self.buttons removeAllObjects];
     
+    // load button images
+    UIImage *filledStar = [UIImage imageNamed:@"filledStar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:NULL];
+    UIImage *emptyStar = [UIImage imageNamed:@"emptyStar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:NULL];
+    UIImage *highlightedStar = [UIImage imageNamed:@"highlightedStar" inBundle:[NSBundle bundleForClass:self.class] compatibleWithTraitCollection:NULL];
+    
+    
     for (int i = 0; i < self.startCount; i++) {
         UIButton* button = [[UIButton alloc] init];
-        [button setBackgroundColor:[UIColor redColor]];
+//        [button setBackgroundColor:[UIColor redColor]];
+        [button setImage:emptyStar forState:(UIControlState)UIControlStateNormal];
+        [button setImage:filledStar forState:UIControlStateSelected];
+        [button setImage:highlightedStar forState:UIControlStateHighlighted];
+        [button setImage:highlightedStar forState:(UIControlStateHighlighted | UIControlStateSelected)];
+        
         [button setTranslatesAutoresizingMaskIntoConstraints:NO];
         [[button.heightAnchor constraintEqualToConstant:self.startSize.height] setActive:YES];
         [[button.widthAnchor constraintEqualToConstant:self.startSize.width] setActive:YES];
