@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J0s-dS-Y8P">
-                                <rect key="frame" x="0.0" y="40" width="375" height="476.5"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="476.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meal Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9n-1d-Djn">
                                         <rect key="frame" x="0.0" y="0.0" width="86.5" height="20.5"/>
@@ -64,7 +64,7 @@
                         <constraints>
                             <constraint firstItem="J0s-dS-Y8P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7LR-bx-iXt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="J0s-dS-Y8P" secondAttribute="trailing" id="NDg-FX-ihV"/>
-                            <constraint firstItem="J0s-dS-Y8P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="xjg-T7-Ujo"/>
+                            <constraint firstItem="J0s-dS-Y8P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Y1B-Kb-ZsJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

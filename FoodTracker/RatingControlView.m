@@ -8,7 +8,7 @@
 
 #import "RatingControlView.h"
 
-IB_DESIGNABLE
+
 @interface RatingControlView()
 
 @property (strong, nonatomic) NSMutableArray *buttons;
@@ -17,6 +17,18 @@ IB_DESIGNABLE
 @end
 
 @implementation RatingControlView
+
+-(void)setStartCount:(NSInteger)startCount
+{
+    self.startCount = startCount;
+    [self setupButtons];
+}
+
+-(void)setStartSize:(CGSize)startSize
+{
+    self.startSize = startSize;
+    [self setupButtons];
+}
 
 -(void)ratingButtonTapped: (UIButton *)button
 {

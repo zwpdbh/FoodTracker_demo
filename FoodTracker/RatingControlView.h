@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
+IB_DESIGNABLE
 @interface RatingControlView : UIStackView
-
+@property (nonatomic) IBInspectable CGSize startSize;
+@property (nonatomic) IBInspectable NSInteger startCount;
 @end
