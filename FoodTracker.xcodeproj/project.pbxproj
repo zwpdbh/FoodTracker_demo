@@ -58,17 +58,25 @@
 		DB5F905C20EEC52200B387F4 /* FoodTracker */ = {
 			isa = PBXGroup;
 			children = (
-				DB5F905D20EEC52200B387F4 /* AppDelegate.h */,
-				DB5F905E20EEC52200B387F4 /* AppDelegate.m */,
+				DB5F907320EEC52C00B387F4 /* supporting files */,
 				DB5F906020EEC52200B387F4 /* ViewController.h */,
 				DB5F906120EEC52200B387F4 /* ViewController.m */,
 				DB5F906320EEC52200B387F4 /* Main.storyboard */,
+			);
+			path = FoodTracker;
+			sourceTree = "<group>";
+		};
+		DB5F907320EEC52C00B387F4 /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				DB5F905D20EEC52200B387F4 /* AppDelegate.h */,
+				DB5F905E20EEC52200B387F4 /* AppDelegate.m */,
 				DB5F906620EEC52200B387F4 /* Assets.xcassets */,
 				DB5F906820EEC52200B387F4 /* LaunchScreen.storyboard */,
 				DB5F906B20EEC52200B387F4 /* Info.plist */,
 				DB5F906C20EEC52200B387F4 /* main.m */,
 			);
-			path = FoodTracker;
+			name = "supporting files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
