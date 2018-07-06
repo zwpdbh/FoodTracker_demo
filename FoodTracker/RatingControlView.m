@@ -18,6 +18,16 @@
 
 @implementation RatingControlView
 
+-(NSInteger)startCount
+{
+    return 5;
+}
+
+-(CGSize)startSize
+{
+    return CGSizeMake(44.0, 44.0);
+}
+
 -(void)setStartCount:(NSInteger)startCount
 {
     self.startCount = startCount;
@@ -45,12 +55,12 @@
 
 -(void)setupButtons
 {
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < self.startCount; i++) {
         UIButton* button = [[UIButton alloc] init];
         [button setBackgroundColor:[UIColor redColor]];
         [button setTranslatesAutoresizingMaskIntoConstraints:NO];
-        [[button.heightAnchor constraintEqualToConstant:44.0] setActive:YES];
-        [[button.widthAnchor constraintEqualToConstant:44.0] setActive:YES];
+        [[button.heightAnchor constraintEqualToConstant:self.startSize.height] setActive:YES];
+        [[button.widthAnchor constraintEqualToConstant:self.startSize.width] setActive:YES];
         
         // used the target-action pattern to link elements to action methods.
         [button addTarget:self action:@selector(ratingButtonTapped:) forControlEvents: UIControlEventTouchUpInside];
