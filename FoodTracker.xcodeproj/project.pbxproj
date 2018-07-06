@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB58CCD720EEFA0700419A6C /* RatingControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB58CCD620EEFA0700419A6C /* RatingControlView.m */; };
 		DB5F905F20EEC52200B387F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F905E20EEC52200B387F4 /* AppDelegate.m */; };
 		DB5F906220EEC52200B387F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F906120EEC52200B387F4 /* ViewController.m */; };
 		DB5F906520EEC52200B387F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5F906320EEC52200B387F4 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB58CCD520EEFA0700419A6C /* RatingControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingControlView.h; sourceTree = "<group>"; };
+		DB58CCD620EEFA0700419A6C /* RatingControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RatingControlView.m; sourceTree = "<group>"; };
 		DB5F905A20EEC52200B387F4 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5F905D20EEC52200B387F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB5F905E20EEC52200B387F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -61,6 +64,8 @@
 				DB5F907320EEC52C00B387F4 /* supporting files */,
 				DB5F906020EEC52200B387F4 /* ViewController.h */,
 				DB5F906120EEC52200B387F4 /* ViewController.m */,
+				DB58CCD520EEFA0700419A6C /* RatingControlView.h */,
+				DB58CCD620EEFA0700419A6C /* RatingControlView.m */,
 				DB5F906320EEC52200B387F4 /* Main.storyboard */,
 			);
 			path = FoodTracker;
@@ -153,6 +158,7 @@
 				DB5F906220EEC52200B387F4 /* ViewController.m in Sources */,
 				DB5F906D20EEC52200B387F4 /* main.m in Sources */,
 				DB5F905F20EEC52200B387F4 /* AppDelegate.m in Sources */,
+				DB58CCD720EEFA0700419A6C /* RatingControlView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
