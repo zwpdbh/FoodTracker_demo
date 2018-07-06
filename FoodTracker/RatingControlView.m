@@ -10,35 +10,28 @@
 
 
 @interface RatingControlView()
-
 @property (strong, nonatomic) NSMutableArray *buttons;
-@property (nonatomic) NSInteger rating;
-
+@property (nonatomic) int rating;
 @end
 
 @implementation RatingControlView
 
--(NSInteger)startCount
-{
-    return 5;
-}
 
--(CGSize)startSize
+-(void)setStartCount:(int)startCount
 {
-    return CGSizeMake(44.0, 44.0);
-}
-
--(void)setStartCount:(NSInteger)startCount
-{
-    self.startCount = startCount;
+    _startCount = startCount;
     [self setupButtons];
+    NSLog(@"set startCount");
 }
+
 
 -(void)setStartSize:(CGSize)startSize
 {
-    self.startSize = startSize;
+    _startSize = startSize;
     [self setupButtons];
+    NSLog(@"set startSize");
 }
+
 
 -(void)ratingButtonTapped: (UIButton *)button
 {
@@ -55,6 +48,12 @@
 
 -(void)setupButtons
 {
+    for (UIButton *eachButton in self.buttons) {
+        [self removeArrangedSubview:eachButton];
+        [eachButton removeFromSuperview];
+    }
+    [self.buttons removeAllObjects];
+    
     for (int i = 0; i < self.startCount; i++) {
         UIButton* button = [[UIButton alloc] init];
         [button setBackgroundColor:[UIColor redColor]];
@@ -74,6 +73,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
+        self.startSize = CGSizeMake(44.0, 44.0);
+        self.startCount = 5;
         [self setupButtons];
     }
     return self;
