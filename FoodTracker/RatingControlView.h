@@ -10,6 +10,6 @@
 
 IB_DESIGNABLE
 @interface RatingControlView : UIStackView
-@property (nonatomic, assign) IBInspectable CGSize startSize;
-@property (nonatomic, assign) IBInspectable int startCount;
+@property (nonatomic) IBInspectable CGSize startSize;
+@property (nonatomic) IBInspectable int startCount;
 @end

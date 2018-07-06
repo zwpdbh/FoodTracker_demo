@@ -16,14 +16,12 @@
 
 @implementation RatingControlView
 
-
 -(void)setStartCount:(int)startCount
 {
     _startCount = startCount;
     [self setupButtons];
     NSLog(@"set startCount");
 }
-
 
 -(void)setStartSize:(CGSize)startSize
 {
@@ -75,6 +73,7 @@
     if (self) {
         self.startSize = CGSizeMake(44.0, 44.0);
         self.startCount = 5;
+        
         [self setupButtons];
     }
     return self;
