@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DB36792220F055F900D02869 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36792120F055F900D02869 /* Meal.m */; };
 		DB36796020F05DEC00D02869 /* FoodTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36795F20F05DEC00D02869 /* FoodTrackerTests.m */; };
+		DB36796920F0673B00D02869 /* Meal.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36796820F0673B00D02869 /* Meal.m */; };
+		DB36796C20F067FE00D02869 /* MealTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36796B20F067FE00D02869 /* MealTableViewCell.m */; };
 		DB58CCD720EEFA0700419A6C /* RatingControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB58CCD620EEFA0700419A6C /* RatingControlView.m */; };
 		DB5F905F20EEC52200B387F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F905E20EEC52200B387F4 /* AppDelegate.m */; };
 		DB5F906220EEC52200B387F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F906120EEC52200B387F4 /* ViewController.m */; };
@@ -29,11 +30,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		DB36792020F055F900D02869 /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
-		DB36792120F055F900D02869 /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
 		DB36795D20F05DEC00D02869 /* FoodTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB36795F20F05DEC00D02869 /* FoodTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FoodTrackerTests.m; sourceTree = "<group>"; };
 		DB36796120F05DEC00D02869 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB36796720F0673B00D02869 /* Meal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Meal.h; sourceTree = "<group>"; };
+		DB36796820F0673B00D02869 /* Meal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Meal.m; sourceTree = "<group>"; };
+		DB36796A20F067FE00D02869 /* MealTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealTableViewCell.h; sourceTree = "<group>"; };
+		DB36796B20F067FE00D02869 /* MealTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealTableViewCell.m; sourceTree = "<group>"; };
 		DB58CCD520EEFA0700419A6C /* RatingControlView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RatingControlView.h; sourceTree = "<group>"; };
 		DB58CCD620EEFA0700419A6C /* RatingControlView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RatingControlView.m; sourceTree = "<group>"; };
 		DB5F905A20EEC52200B387F4 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -98,9 +101,11 @@
 			children = (
 				DB5F907320EEC52C00B387F4 /* supporting files */,
 				DB5F906020EEC52200B387F4 /* ViewController.h */,
+				DB36796720F0673B00D02869 /* Meal.h */,
+				DB36796820F0673B00D02869 /* Meal.m */,
+				DB36796A20F067FE00D02869 /* MealTableViewCell.h */,
+				DB36796B20F067FE00D02869 /* MealTableViewCell.m */,
 				DB5F906120EEC52200B387F4 /* ViewController.m */,
-				DB36792020F055F900D02869 /* Meal.h */,
-				DB36792120F055F900D02869 /* Meal.m */,
 				DB58CCD520EEFA0700419A6C /* RatingControlView.h */,
 				DB58CCD620EEFA0700419A6C /* RatingControlView.m */,
 				DB5F906320EEC52200B387F4 /* Main.storyboard */,
@@ -231,7 +236,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB36792220F055F900D02869 /* Meal.m in Sources */,
+				DB36796C20F067FE00D02869 /* MealTableViewCell.m in Sources */,
+				DB36796920F0673B00D02869 /* Meal.m in Sources */,
 				DB5F906220EEC52200B387F4 /* ViewController.m in Sources */,
 				DB5F906D20EEC52200B387F4 /* main.m in Sources */,
 				DB5F905F20EEC52200B387F4 /* AppDelegate.m in Sources */,
