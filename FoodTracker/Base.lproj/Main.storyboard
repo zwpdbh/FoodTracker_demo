@@ -130,7 +130,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="v2r-XU-7tf">
-                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Pa6-yG-mKt"/>
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="Pa6-yG-mKt">
+                            <connections>
+                                <action selector="cancel:" destination="BYZ-38-t0r" id="UmS-Ec-1bf"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Save" id="4pG-5c-xBs">
                             <connections>
                                 <segue destination="DGP-KE-u4Z" kind="unwind" unwindAction="unwindFromMealViewController:" id="32h-gH-IYd"/>

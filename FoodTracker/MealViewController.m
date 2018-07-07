@@ -21,6 +21,13 @@
 
 @implementation MealViewController
 
+#pragma mark Navigation methods
+
+- (IBAction)cancel:(UIBarButtonItem *)sender
+{
+    [self dismissViewControllerAnimated:YES completion:NULL];
+}
+
 -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([sender isKindOfClass:[UIBarButtonItem class]]) {
