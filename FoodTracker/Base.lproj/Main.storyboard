@@ -44,7 +44,7 @@
                                                 </userDefinedRuntimeAttribute>
                                             </userDefinedRuntimeAttributes>
                                         </stackView>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-VB-wi2">
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gSM-VB-wi2">
                                             <rect key="frame" x="0.0" y="0.0" width="89" height="89"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -131,15 +131,21 @@
                     </view>
                     <navigationItem key="navigationItem" title="New Meal" id="v2r-XU-7tf">
                         <barButtonItem key="leftBarButtonItem" title="Cancel" id="Pa6-yG-mKt"/>
-                        <barButtonItem key="rightBarButtonItem" title="Save" id="4pG-5c-xBs"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="4pG-5c-xBs">
+                            <connections>
+                                <segue destination="DGP-KE-u4Z" kind="unwind" unwindAction="unwindFromMealViewController:" id="32h-gH-IYd"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="nameTextFiled" destination="uWO-ca-GF3" id="cjG-h4-VQy"/>
                         <outlet property="photoImageView" destination="EFY-y5-Kpa" id="cE9-hx-a9E"/>
                         <outlet property="ratingControlView" destination="A6L-OE-cnx" id="YJq-Ps-k6G"/>
+                        <outlet property="saveButton" destination="4pG-5c-xBs" id="llo-Ot-vZ0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <exit id="DGP-KE-u4Z" userLabel="Exit" sceneMemberID="exit"/>
                 <tapGestureRecognizer id="YZq-C5-mh9">
                     <connections>
                         <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="spm-Xh-s12"/>

@@ -9,12 +9,28 @@
 #import "MealTableViewController.h"
 #import "MealTableViewCell.h"
 #import "Meal.h"
+#import "MealViewController.h"
 
 @interface MealTableViewController ()
 
 @end
 
 @implementation MealTableViewController
+
+-(IBAction)unwindFromMealViewController:(UIStoryboardSegue *)segue {
+    
+    if ([segue.sourceViewController isKindOfClass:[MealViewController class]]) {
+        MealViewController *mealVC = (MealViewController *)segue.sourceViewController;
+        if (mealVC.meal) {
+            NSIndexPath *indexPath  = [NSIndexPath indexPathForRow:self.meals.count inSection:0];
+            NSMutableArray *indexPathArray = [[NSMutableArray alloc] initWithCapacity:1];
+            [indexPathArray addObject:indexPath];
+            [self.meals addObject: mealVC.meal];
+            [self.tableView insertRowsAtIndexPaths:indexPathArray withRowAnimation:UITableViewRowAnimationAutomatic];
+        }
+    }
+}
+
 
 - (void)loadSampleMeals
 {

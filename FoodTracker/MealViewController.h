@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Meal.h"
 
 @interface MealViewController : UIViewController
-
-
+@property (nonatomic, strong) Meal* meal;
 @end
 

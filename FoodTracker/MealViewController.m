@@ -9,17 +9,31 @@
 #import "MealViewController.h"
 #import "RatingControlView.h"
 
+
 @interface MealViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextFiled;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet RatingControlView *ratingControlView;
+@property (weak, nonatomic) IBOutlet UIBarButtonItem *saveButton;
 
 @end
 
-
-
 @implementation MealViewController
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([sender isKindOfClass:[UIBarButtonItem class]]) {
+        if ([sender isEqual:self.saveButton]) {
+            self.meal = [[Meal alloc] initWithName:self.nameTextFiled.text withPhoto:self.photoImageView.image andRating:self.ratingControlView.rating];
+        } else {
+            NSLog(@"The save button was not pressed, cancelling");
+            return;
+        }
+    }
+}
+
+
 
 - (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer *)sender
 {
