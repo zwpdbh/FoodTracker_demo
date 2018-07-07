@@ -76,15 +76,27 @@
     [textField resignFirstResponder];
     return YES;
 }
+-(void) textFieldDidEndEditing:(UITextField *)textField {
+    [self updateSaveButtonState];
+    self.navigationItem.title = textField.text;
+}
 
+-(void) updateSaveButtonState
+{
+    if (self.nameTextFiled.text == NULL || [self.nameTextFiled.text length] == 0) {
+        [self.saveButton setEnabled:NO];
+    } else {
+        [self.saveButton setEnabled:YES];
+    }
+}
 
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.nameTextFiled.delegate = self;
+    [self updateSaveButtonState];
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
