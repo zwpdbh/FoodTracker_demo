@@ -12,4 +12,7 @@ IB_DESIGNABLE
 @interface RatingControlView : UIStackView
 @property (nonatomic) IBInspectable CGSize startSize;
 @property (nonatomic) IBInspectable int startCount;
+@property (nonatomic) int rating;
+
+-(void)setupButtons;
 @end

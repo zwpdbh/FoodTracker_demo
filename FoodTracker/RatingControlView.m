@@ -11,7 +11,6 @@
 
 @interface RatingControlView()
 @property (strong, nonatomic) NSMutableArray *buttons;
-@property (nonatomic) int rating;
 @end
 
 @implementation RatingControlView
@@ -105,9 +104,8 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        self.startSize = CGSizeMake(44.0, 44.0);
+        self.startSize = CGSizeMake(44, 44);
         self.startCount = 5;
-        
         [self setupButtons];
     }
     return self;
@@ -117,6 +115,8 @@
 {
     self = [super initWithCoder:coder];
     if (self) {
+        self.startSize = CGSizeMake(44, 44);
+        self.startCount = 5;
         [self setupButtons];
     }
     return self;

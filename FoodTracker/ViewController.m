@@ -16,7 +16,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet RatingControlView *ratingControlView;
 
-
 @end
 
 
