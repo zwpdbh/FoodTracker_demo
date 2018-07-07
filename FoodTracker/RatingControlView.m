@@ -33,18 +33,11 @@
 -(void)setRating:(int)rating
 {
     _rating = rating;
-    NSLog(@"didset rating 😀");
     [self updateButtonSelectionStates];
 }
 
 -(void)updateButtonSelectionStates
 {
-//    for (UIButton *eachButton in self.buttons) {
-//        if ([self.buttons indexOfObject:eachButton] < self.rating) {
-//            [eachButton setSelected:YES];
-//            NSLog(@"")
-//        }
-//    }
     for (int i = 0;  i < [self.buttons count]; i++) {
         if (i <= self.rating - 1) {
             [[self.buttons objectAtIndex:i] setSelected:YES];
@@ -52,12 +45,10 @@
             [[self.buttons objectAtIndex:i] setSelected:NO];
         }
     }
-    
 }
 
 -(void)ratingButtonTapped: (UIButton *)button
 {
-//    NSLog(@"button pressed 😀");
     int index = (int)[self.buttons indexOfObject:button];
     int selectedRating = index + 1;
     if (selectedRating == self.rating) {

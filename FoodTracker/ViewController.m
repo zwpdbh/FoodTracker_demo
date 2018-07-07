@@ -7,12 +7,15 @@
 //
 
 #import "ViewController.h"
+#import "RatingControlView.h"
 
 @interface ViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextFiled;
 @property (weak, nonatomic) IBOutlet UILabel *mealNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
+@property (weak, nonatomic) IBOutlet RatingControlView *ratingControlView;
+
 
 @end
 
@@ -54,10 +57,6 @@
     }
 }
 
-- (IBAction)setDefaultLabelText:(UIButton *)sender
-{
-    self.mealNameLabel.text = @"Default Text";
-}
 
 #pragma mark UITextFieldDelegate methods
 -(BOOL) textFieldShouldReturn:(UITextField *)textField
