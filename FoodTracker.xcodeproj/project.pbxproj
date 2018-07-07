@@ -13,7 +13,7 @@
 		DB36796F20F075D400D02869 /* MealTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB36796E20F075D400D02869 /* MealTableViewController.m */; };
 		DB58CCD720EEFA0700419A6C /* RatingControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB58CCD620EEFA0700419A6C /* RatingControlView.m */; };
 		DB5F905F20EEC52200B387F4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F905E20EEC52200B387F4 /* AppDelegate.m */; };
-		DB5F906220EEC52200B387F4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F906120EEC52200B387F4 /* ViewController.m */; };
+		DB5F906220EEC52200B387F4 /* MealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB5F906120EEC52200B387F4 /* MealViewController.m */; };
 		DB5F906520EEC52200B387F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5F906320EEC52200B387F4 /* Main.storyboard */; };
 		DB5F906720EEC52200B387F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB5F906620EEC52200B387F4 /* Assets.xcassets */; };
 		DB5F906A20EEC52200B387F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB5F906820EEC52200B387F4 /* LaunchScreen.storyboard */; };
@@ -45,8 +45,8 @@
 		DB5F905A20EEC52200B387F4 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB5F905D20EEC52200B387F4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DB5F905E20EEC52200B387F4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		DB5F906020EEC52200B387F4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		DB5F906120EEC52200B387F4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		DB5F906020EEC52200B387F4 /* MealViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MealViewController.h; sourceTree = "<group>"; };
+		DB5F906120EEC52200B387F4 /* MealViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MealViewController.m; sourceTree = "<group>"; };
 		DB5F906420EEC52200B387F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB5F906620EEC52200B387F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB5F906920EEC52200B387F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,8 +109,8 @@
 				DB36796820F0673B00D02869 /* Meal.m */,
 				DB36796A20F067FE00D02869 /* MealTableViewCell.h */,
 				DB36796B20F067FE00D02869 /* MealTableViewCell.m */,
-				DB5F906020EEC52200B387F4 /* ViewController.h */,
-				DB5F906120EEC52200B387F4 /* ViewController.m */,
+				DB5F906020EEC52200B387F4 /* MealViewController.h */,
+				DB5F906120EEC52200B387F4 /* MealViewController.m */,
 				DB58CCD520EEFA0700419A6C /* RatingControlView.h */,
 				DB58CCD620EEFA0700419A6C /* RatingControlView.m */,
 				DB5F906320EEC52200B387F4 /* Main.storyboard */,
@@ -244,7 +244,7 @@
 				DB36796F20F075D400D02869 /* MealTableViewController.m in Sources */,
 				DB36796C20F067FE00D02869 /* MealTableViewCell.m in Sources */,
 				DB36796920F0673B00D02869 /* Meal.m in Sources */,
-				DB5F906220EEC52200B387F4 /* ViewController.m in Sources */,
+				DB5F906220EEC52200B387F4 /* MealViewController.m in Sources */,
 				DB5F906D20EEC52200B387F4 /* main.m in Sources */,
 				DB5F905F20EEC52200B387F4 /* AppDelegate.m in Sources */,
 				DB58CCD720EEFA0700419A6C /* RatingControlView.m in Sources */,

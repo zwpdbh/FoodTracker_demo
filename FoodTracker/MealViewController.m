@@ -6,13 +6,12 @@
 //  Copyright © 2018 Otago. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MealViewController.h"
 #import "RatingControlView.h"
 
-@interface ViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface MealViewController () <UITextFieldDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *nameTextFiled;
-@property (weak, nonatomic) IBOutlet UILabel *mealNameLabel;
 @property (weak, nonatomic) IBOutlet UIImageView *photoImageView;
 @property (weak, nonatomic) IBOutlet RatingControlView *ratingControlView;
 
@@ -20,7 +19,7 @@
 
 
 
-@implementation ViewController
+@implementation MealViewController
 
 - (IBAction)selectImageFromPhotoLibrary:(UITapGestureRecognizer *)sender
 {
@@ -64,12 +63,7 @@
     return YES;
 }
 
-// this method gives you a chance to read the information entered into the text field
-// and do something with it.
-- (void)textFieldDidEndEditing:(UITextField *)textField
-{
-    self.mealNameLabel.text = textField.text;
-}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
